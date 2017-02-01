@@ -1,0 +1,25 @@
+
+extends layout
+block content
+    section.postsHeader
+        div.postsImage
+    section.postsContent
+        div.container.postsContainer
+            div.row
+                div.col-lg-12.col-md-12
+                    h3.serviceHeading Posts
+
+                div.row.post-row
+                    - for post in posts
+                        div.col-lg-6.col-md-6.post-column
+                            a.textWraper(href="/post/#{post.id}/")
+                                img(src="/static/img/post_icon.png")
+                                h3.postHeading= post.short_title
+                                div.postText!= post.text|safe|truncatewords:40
+
+            div.row
+                div.col-lg-12.col-md-12
+                    div.pageSwitchContainer
+                        h3.pagination 
+    section.footerBlock
+        include footer

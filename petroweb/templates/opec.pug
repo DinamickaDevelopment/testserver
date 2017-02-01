@@ -1,0 +1,24 @@
+
+extends layout
+block content
+    section.opecHeader
+        div.opecImage
+    section.countryReports
+        div.container
+            div.row
+                div.col-lg-12.col-md-12.postMarkSectionWrap
+                    div.row
+                        div.col-lg-4.col-md-4.postmarkContainer
+                            div.opecMark
+                        div.col-lg-8.col-md-8.countryTextContainer 
+                            div.row.block-tile
+                                div.col-lg-12.col-md-12
+                                    div.top-tile
+                                        h3.countryHeading OPEC Production Monitor
+                                        p.countryText This flagship report is issued weekly and details OPEC supply on a country-by-country basis. Information is provided on exports, refinery activity, domestic uses, well-head production and more.  Commentary is included to add insight into Member countries’ production changes and other developments.
+                            div.row.block-tile.bottom-tile
+                                div.col-lg-12.col-md-12
+                                    div.countryBtnContainer
+                                        a.btn.btn-default.req(href="/contact") request sample report
+    section.footerBlock               
+        include footer

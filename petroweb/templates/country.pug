@@ -1,0 +1,24 @@
+
+extends layout
+block content
+    section.countryHeader
+        div.countryImage
+    section.countryReports
+        div.container
+            div.row
+                div.col-lg-12.col-md-12.postMarkSectionWrap
+                    div.row
+                        div.col-lg-4.col-md-4.postmarkContainer
+                            div.postMark
+                        div.col-lg-8.col-md-8.countryTextContainer 
+                            div.row.block-tile
+                                div.col-lg-12.col-md-12
+                                    div.top-tile
+                                        h3.countryHeading Country Reports
+                                        p.countryText Petro-Logistics publishes full analysis of oil supply and exports from a wide range of countries on a monthly and an annual basis, including details of grade splits, destinations, vessels etc.  We can also create bespoke analysis of exports for other countries to meet specific customer requirements.   
+                            div.row.block-tile.bottom-tile
+                                div.col-lg-12.col-md-12
+                                    div.countryBtnContainer
+                                        a.btn.btn-default.req(href="/contact") request sample report
+    section.footerBlock               
+        include footer

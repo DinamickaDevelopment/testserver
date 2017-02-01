@@ -1,0 +1,21 @@
+{
+    "allowed_hosts"            : "*",
+    "admin"                    : "True",
+    "debug"                    : "True",
+    "database"                 : "petroweb",
+    "db_user"                  : "postgres",
+    "db_pass"                  : "postgres",
+    "db_host"                  : "127.0.0.1",
+    "smtp"                     : "in-v3.mailjet.com",
+    "support_email"            : "info@petro-logistics.com",
+    "smtp_user"                : "",
+    "smtp_password"            : "",
+    "smtp_port"                : 587,
+    "smtp_ssl"                 : "True",
+    "secret"                   : "--------------THIS NEED TO CHANGED FOR PRODUCTION --------------",
+    "title"                    : "Petro-Logistics",
+    "zoho_auth_token"          : "",
+    "google_analytics_id"      : "",
+    "mailjet_apikey"           : "",
+    "mailjey_apisecret"        : ""
+}

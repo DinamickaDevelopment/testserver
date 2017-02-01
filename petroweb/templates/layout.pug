@@ -1,0 +1,53 @@
+
+| {% load staticfiles %}
+| {% load analytical %}
+doctype html
+html
+  head
+    | {% analytical_head_top %}
+    title= title
+    meta( name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="{% static 'css/style.css' %}")
+    link(href="{% static 'css/bootstrap.min.css' %}", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,600,700", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800", rel="stylesheet", type="text/css")
+    | {% analytical_head_bottom %}
+        
+  body
+    | {% analytical_body_top %}
+    nav.navbar.navbar-default.navbar-static-top(role='navigation')
+      div.container
+          div.navbar-header
+            button(type="button", data-toggle="collapse", data-target="#bs-example-navbar-collapse-1", aria-expanded="false").collapsed.navbar-toggle
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a(href="#").navbar-brand
+                img(alt="logo" src="{% static 'img/logo.png' %}")
+
+          div#bs-example-navbar-collapse-1.collapse.navbar-collapse
+   
+            ul.nav.navbar-nav.navbar-right              
+              
+              li: a(href='/') home
+              li: a(href='/about') about
+              li: a(href='/history') history
+              li.dropdown
+                a(href='/services') services
+                  b.caret
+                ul.dropdown-menu
+                  li: a(href='/services/opec') OPEC production monitor
+                  li: a(href='/services/soviet') Soviet export monitor
+                  li: a(href='/services/country') Country reports
+              li: a(href='/contact') contact
+              li: a(href='/posts') posts
+              li: a.clientArea(href='https://secure.petro-logistics.com/client/') client area
+    block content
+    script(src="{% static 'js/bb3c3ab1d6.js' %}")
+    script(src="{% static 'js/jquery.min.js' %}")
+    script(src="{% static 'js/bootstrap.min.js' %}")
+    script(src="{% static 'js/script.js' %}")
+    script(src="{% static 'js/smoothscroll.js' %}")
+    script(src="{% static 'js/form_handler.js' %}")
+    | {% analytical_body_bottom %}

@@ -1,0 +1,14 @@
+django<1.10
+django-autoslug
+django-tinymce
+django-filebrowser
+django-phonenumber-field
+django-endless-pagination
+gunicorn
+unipath
+django-mailjet
+psycopg2
+pypugjs
+mailjet_rest
+django-analytical
+zopy

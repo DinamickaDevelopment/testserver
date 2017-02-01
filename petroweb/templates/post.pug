@@ -1,0 +1,11 @@
+
+extends layout
+block content
+    section.postContent
+        div.container.singlePostContainer
+            h3.serviceHeading.singlePostHeading= post.title
+            div.postTextContainer
+                p.singlePostText!= post.text|safe
+                h2#ref 
+    section.singlePostFooterBlock
+        include footer

@@ -1,0 +1,71 @@
+
+extends layout
+block content
+    section.contactHeader
+        div.contactImage
+    section.contactContent
+        div.container.contactContent
+            div.row
+                div.col-lg-12.col-md-12
+                    h3.serviceHeading Contact
+                    p.contact-title To contact us or request a sample or trial of our products, 
+                    p.contact-title please complete the form below
+            div.row
+                div.col-lg-8.col-md-8.col-sm-12.col-lg-offset-2.col-md-offset-2.col-sm-offset-0.form-wrap
+                    form.contactForm(id="contactForm" name="contactForm")
+                        div.row
+                            div.col-lg-6.col-md-6.left-half
+                                div.form-group                           
+                                    input.form-control.contact-input(placeholder="First Name*", required, name="firstName")
+                            div.col-lg-6.col-md-6.right-half
+                                div.form-group
+                                    input.form-control.contact-input(placeholder="Last Name*", required, name="lastName")
+                        div.row
+                            div.col-lg-12.col-md-12
+                                div.form-group
+                                    input.form-control.contact-input(placeholder="Email*", required, type="email", name="email")
+                        div.row
+                            div.col-lg-12.col-md-12
+                                div.form-group
+                                    input.form-control.contact-input(placeholder="Company*", required, name="company")
+                        div.row
+                            div.col-lg-12.col-md-12
+                                div.form-group
+                                    input.form-control.contact-input(placeholder="Phone", name="phone")
+                        div.row
+                            div.col-lg-12.col-md-12
+                                div.form-group
+                                    textarea.form-control.contact-textarea(placeholder="Comment", rows="10", name="comment")
+                        div.row
+                            div.col-lg-12.col-md-12  
+                                div.form-group
+                                    input.form-control.submit-btn(type="submit", value="SUBMIT")                                
+            div.row
+                div.col-lg-8.col-md-8.col-sm-12.col-lg-offset-2.col-md-offset-2.col-sm-offset-0.info
+                    div.row
+                        div.col-lg-6.col-md-6.info-text.info-tile
+                            p 1 rue Etienne-Dumont
+                            p CH-1204, Geneva
+                            p Switzerland
+                        div.col-lg-6.col-md-6.info-tile
+                            div
+                                i.fa.fa-phone-square
+                                span  +41 (0) 22 734 0054
+                            div
+                                i.fa.fa-fax
+                                span  +41 (0) 22 733 2895
+                            div
+                                i.fa.fa-envelope
+                                span  info@petro-logistics.com
+
+
+
+    section.popupBlock
+        div.popupBody
+            div.popupContentWrap
+                div.popupContent
+                    h3.serviceHeading Success!
+                    button.popupBtn(id="popupBtn") OK
+
+    section.footerBlock
+        include footer

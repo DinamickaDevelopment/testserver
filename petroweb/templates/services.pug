@@ -1,0 +1,42 @@
+
+extends layout
+block content
+    section.servicesHeader
+        div.servicesImage
+    section.servicesContent
+        div.container
+            div.row.serviceImgRow
+                div.col-lg-4.col-md-4
+                    a.servicePreview(href="/services/opec")
+                        div.serviceImg.opec-img
+                        div.linkBtn
+                            h3 OPEC Production Monitor
+                    div.serviceBtnSm.serviceBtn
+                        a.btn.btn-default.req(href="/contact") request sample report
+                div.col-lg-4.col-md-4
+                    a.servicePreview(href="/services/soviet")
+                        div.serviceImg.soviet-img
+                        div.linkBtn
+                            h3 Soviet Export Monitoring
+                    div.serviceBtnSm.serviceBtn
+                        a.btn.btn-default.req(href="/contact") request sample report
+                div.col-lg-4.col-md-4
+                    a.servicePreview(href="/services/country")
+                        div.serviceImg.country-img
+                        div.linkBtn
+                            h3 Country Reports
+                    div.serviceBtnSm.serviceBtn
+                        a.btn.btn-default.req(href="/contact") request sample report
+            div.row.serviceBtnRow
+                div.serviceBtnLg
+                    div.col-lg-4.col-md-4
+                        div.serviceBtn
+                            a.btn.btn-default.req(href="/contact") request sample report 
+                    div.col-lg-4.col-md-4
+                        div.serviceBtn
+                            a.btn.btn-default.req(href="/contact") request sample report 
+                    div.col-lg-4.col-md-4
+                        div.serviceBtn
+                            a.btn.btn-default.req(href="/contact") request sample report 
+    section.footerBlock
+        include footer
